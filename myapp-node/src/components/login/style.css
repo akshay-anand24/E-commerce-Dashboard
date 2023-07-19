@@ -1,0 +1,98 @@
+*{margin-top: 0px;
+    padding: 0;}
+    
+    .login h1{
+        margin-top: 30px;
+        text-align: center;
+        text-decoration: underline;
+    }
+    .login form{
+        display: block;
+        margin: auto;
+        width: 50vw;
+        border: 2px solid black;
+        font-size: 22px;
+        border-radius: 5px;
+        box-shadow: 1px 2px 5px 1px black;
+    }
+    .login label{
+        display: inline-block;
+        margin: 10px;
+        width: 20%;
+        /* border: 2px solid black; */
+        box-sizing: border-box;
+    }
+    .login input{
+        margin: 10px;
+        margin-top: 15px;
+        width: 70%;
+         padding: 7px;
+        box-sizing: border-box;
+        font-size: 18px;
+    }
+    .login div{
+        margin: auto;
+        width :70%;
+        font-size: 15px;
+        /* border: 1px solid black; */
+        color: red;
+    }
+     .login button{
+        display: block;
+        margin: auto;
+        height: 35px;
+        margin-bottom: 10px;
+        width: 40%;
+        font-size: 22px;
+        margin-top: 30px;
+        background-color: rgb(175, 178, 181);
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    .login button:hover{
+        background-color: rgb(192, 194, 197)
+    }
+
+
+    #nuser{
+        width: 50vw;
+        margin: auto;
+        margin-top: 10px;
+    }
+    #nuser a{
+        text-decoration: none;
+        font-weight:bold;
+        color: rgb(21, 120, 147);
+    }
+    
+    @media screen and (max-width: 900px){
+     .login   input,.login label,.login button{
+            display: block;
+            width: 95%;
+        }
+       .login button{
+            width: 60%;
+        }
+        .login input{
+            margin-top: 10px;
+        }
+      
+    }
+    
+    @media screen and (max-width: 725px){
+     
+        .login  form,#nuser{
+            width: 70vw;
+        }
+    }
+    
+    @media screen and (max-width: 525px){
+     
+        .login  form,#nuser{
+            width: 90vw;
+        }
+        .login input{
+            margin: auto;
+            margin-bottom: 5px;
+        }
+    }

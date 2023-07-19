@@ -1,0 +1,106 @@
+*{margin: 0;
+    padding: 0;}
+    
+    .signup{
+        margin: auto;
+        /* height: 80vh; */
+        width: 35vw;
+        padding: 2vw;
+        margin-top: 10vh;
+        /* font-size: 20px; */
+        box-sizing: content-box;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px 1px black;
+    }
+    
+    .signup input{
+        width: 95%;
+        /* height: 30px; */
+        padding: 8px;
+        /* font-size: 15px; */
+        border: 0.5px solid black;
+        border-radius: 3px;
+    }
+    .signup h1{
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+    
+    
+    .signbtn{
+        /* width: 8vw; */
+        padding: 7px;
+        margin: 3px;
+        /* font-size: 15px; */
+        background-color: rgb(197, 197, 197);
+        border: 1.5px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .signbtn:hover{
+    background-color:rgb(212, 212, 212);
+    }
+    
+    .taken{
+        color: red;
+    }
+
+    #euser{
+        width: 39vw;
+        margin: auto;
+        text-decoration: none;
+        margin-top: 10px;
+        color: blue;
+    }
+
+    #euser a{
+        text-decoration: none;
+        font-weight:bold;
+        color: rgb(21, 120, 147);
+    }
+    
+    
+    
+    @media only screen and (max-width:1000px){
+        .signup{
+            width: 50vw;
+            /* font-size: 15px; */
+        }
+        .signup input{
+            /* height: 27px; */
+            /* font-size: 13px; */
+        }
+        #euser{
+            width: 54vw;
+        }
+    
+    
+    }@media only screen and (max-width:800px){
+        .signup{
+            width: 70vw;
+        }
+        #euser{
+            width: 74vw;
+        }
+        .signbtn{
+            /* width: 12vw; */
+    
+        }
+    }
+    
+    @media only screen and (max-width:600px){
+        .signup{
+            font-size: 17px;
+            width: 90vw;
+        }
+        #euser{
+            width: 94vw;
+        }
+        .signbtn{
+            /* width: 15vw; */
+        }
+    }
+    
+    

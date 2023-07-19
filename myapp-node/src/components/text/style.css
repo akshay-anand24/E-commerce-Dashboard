@@ -1,0 +1,20 @@
+.textttt{
+    display: block;
+    width: 50%;
+    margin: 40px auto;
+    padding: 8px;
+    transition: width .4s 0.1s;
+    box-shadow: 3px 3px 10px 5px rgb(67, 64, 64);
+    border:1px solid black
+
+
+}
+.textttt h1{
+    text-align: center;
+    text-decoration:underline;
+}
+.textttt:hover{
+    box-shadow: 3px 3px 20px 7px rgb(67, 64, 64);
+    width: 51%;
+}
+

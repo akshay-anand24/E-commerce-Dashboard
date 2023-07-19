@@ -1,0 +1,71 @@
+.UpdateCard{
+    font-size: 20px;
+    font-weight: normal;
+}
+.UCdiv{
+    width: 40vw;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.UCdiv img{
+    height: 500px;
+    width: 100%;
+    border: 2px solid black;
+    box-shadow: 0px 2px 7px 2px rgb(67, 66, 66);
+}
+.Udetails{
+    position: relative;
+    width: 98vw;
+    border: 1px solid black;
+    margin: auto;
+    height: 70vh;
+
+}
+
+.uleft{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 17.24vh;
+    overflow:auto;
+}
+.uleft div{
+    border: 1px solid black;
+}
+.uright{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    border: 1px solid black;
+    overflow: scroll;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.UpdateCard form{
+    width: 60vw;
+    font-size: 15px;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 7px 3px rgb(147, 146, 146);
+
+}
+.UpdateCard form input{
+    padding: 8px;
+    font-size: 15px;
+    width: 70%;
+}
+.UpdateCard form button{
+    padding: 5px;
+    margin: 5px;
+}

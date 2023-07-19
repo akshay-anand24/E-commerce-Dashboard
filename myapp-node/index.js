@@ -1,0 +1,6 @@
+const cartApi = require('./sart/cartCollection/cartApi')
+const itemGet = require('./sart/itemCollection/itemApi')
+const userApi = require('./sart/userCollection/userApi')
+userApi()
+itemGet()
+cartApi()

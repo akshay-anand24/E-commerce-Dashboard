@@ -1,0 +1,15 @@
+
+.admin button{
+    display:block;
+    margin:auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 25px;
+    width:25vw;
+    cursor: pointer;
+    font-size: 4vw;
+}
+@media screen and (max-width:1000px) {
+    .admin{display: none;}
+    .adminlogin{display: none;}
+}

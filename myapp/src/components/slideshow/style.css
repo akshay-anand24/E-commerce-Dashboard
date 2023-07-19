@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.slideshow-container{
+    position: relative;
+    width: 100%;
+    margin-top: 5vh;
+    height: 70vh;
+    box-sizing: border-box;
+}
+.slide{
+    position: absolute;
+    left:0%;
+    width: 50%;
+    margin: auto;
+    height: 100%;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.slide-img{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    transition: width 0.5s;
+}
+
+.slide-img:hover{
+    box-shadow: 1px 1px 7px 2px rgb(64, 62, 62);
+    width: 102%;
+    z-index: inherit;
+    border: 2px solid black;
+}
+
+
+.prev,.next{
+    display: inline;
+    width: 3vw;
+    height: 10vh;
+    padding: 2.5vh;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    color: white;
+    cursor: pointer;
+    transition: width 0.3s,height 0.4s;
+}
+
+.prev{
+    left:0%;
+}
+.next{
+    right: 0%;
+    text-align: right;
+}
+.prev:hover,.next:hover{
+    border: 2px solid black;
+    width: 3.2vw;
+    height: 10.6vh;
+    padding: 2.7vh;
+}
+
+
+.hidden{
+    display: none;
+}
+
+.rText{
+    position: absolute;
+    width:50%;
+    height: 100%;
+    line-height: 5vh;
+    background-color:rgba(175, 175, 175, 0.179);
+    background-image: linear-gradient(0deg, rgb(143, 143, 143),rgba(128, 118, 118, 0.179),white);
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    border: 1px solid black;
+    /* border-top: 0px; */
+    transition: width 0.5s;
+    right: 0%;
+}
+.rText:hover ~ .slide{
+    width: 49%;
+    /* transition-delay: -1s;      */
+}
+
+.rText:hover{
+    width: 51%;
+    z-index: 2;
+    box-shadow: 1px 1px 7px 2px rgb(64, 62, 62);
+    
+}
+
+
+
+.mar{
+    position: absolute;
+    height: 30%;  
+    width: 100%; 
+    bottom: 37%;
+    text-align: center;
+    font-size: 7vw;
+    box-sizing: border-box;
+    animation: text 3s;
+}   
+.rText:hover .mar{
+    animation: example 2s ease-in;
+}
+
+@keyframes text {
+   0%{font-size: 0;
+    bottom: -10%;
+    
+   }
+   100%{
+    bottom: 37%;
+  font-size:7vw;
+   }
+  }
+
+@keyframes example {
+   0%{font-size: 0;
+    bottom: -10%;
+    
+   }
+   100%{
+    bottom: 37%;
+  font-size:7vw;
+   }
+  }
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .slideshow-container{
+        height: 140vh;
+    }
+    .slide{
+        position: absolute;
+        left: 0%;
+        width:100%;
+        height: 100%;
+        
+        box-sizing: border-box;
+    }
+    .slide-img{
+        position: absolute;
+        left: 0%;
+        width:100%;
+        height: 50%;
+        
+        box-sizing: border-box;
+    }
+    .rText{
+        top:51%;
+        height: 50%;
+        width: 100%;
+    }
+   .rText:hover{
+    width: 100%;
+   }
+   .rText:hover ~ .slide{
+    width: 100%;
+}
+.prev,.next{
+   top:22%;
+}
+
+  }

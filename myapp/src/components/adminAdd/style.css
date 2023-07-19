@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+.AdminAdd{
+    position: relative;
+    font-weight: normal;
+    font-size: 15px;
+}
+.AdminAdd h1{
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+.AdminAdd form{
+    position: relative;
+    border: 1px solid black;
+    padding: 1.5vw;
+    width: 60vw;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-sizing: content-box;
+    box-shadow: 0px 1px 7px 3px rgb(99, 99, 99);
+}
+.AdminAdd label{
+    display: inline-block;
+    width: 20%;
+    /* margin: 10px; */
+    font-size: 18px;
+    /* border: 1px solid black; */
+    box-sizing: content-box;
+}
+.AdminAdd input{
+    width: 75%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-sizing: content-box;
+}
+.AdminAdd button{
+     /* width: 8vw; */
+     padding: 7px;
+     margin: 3px;
+     margin-top: 15px;
+     /* font-size: 15px; */
+     background-color: rgb(197, 197, 197);
+     border: 1.5px solid black;
+     border-radius: 5px;
+     cursor: pointer;
+}
+.AdminAdd button:hover{
+    background-color:rgb(212, 212, 212);
+    }
+
+
+@media screen and (max-width:800px) {
+    .AdminAdd input{
+        
+        width: 98%;
+        margin:3px;
+        box-sizing: border-box;
+    }
+    .AdminAdd label{
+       
+        width: 90%;
+        margin:3px;
+
+    }
+    
+}

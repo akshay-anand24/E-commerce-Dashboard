@@ -1,0 +1,102 @@
+
+
+.cardDesc{
+
+    margin-top: 20px;
+    /* border: 1px solid black; */
+
+}
+.cardDesc h1{
+    margin: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+
+
+.cardDesc div{
+    display: inline-block;
+    position: relative;
+    width: 45vw;
+    height: 550px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 1.5vw;
+    box-sizing: border-box;
+}
+.cardDesc div img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+#cscroll{
+    overflow: scroll;
+}
+
+
+.cardDesc div p{
+    display: block;
+    margin: 5%;
+    text-align: justify;
+}
+.cardDesc div span{
+    display: block;
+    font-size: 50px;
+    margin-top: 5%;
+    text-decoration: underline;
+    text-align: center;
+}
+.cardDesc div button{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 40%;
+    height: 30px;
+    padding: 5px;
+    box-sizing: content-box;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid black;
+}
+#cb1{
+    background-color: rgba(167, 167, 167, 0.274);
+}
+#cb1:hover{
+    background-color:rgba(214, 214, 214, 0.274) ;
+}
+#cb2{
+    background-color: rgba(37, 177, 6, 0.811);
+}
+#cb2:hover{
+    background-color:rgba(41, 210, 3, 0.811);
+}
+
+#cb2:active{
+    background-color: rgba(37, 177, 6, 0.811);
+}
+#cb1:active{
+    background-color: rgba(167, 167, 167, 0.274);
+}
+
+@media  screen and (max-width:800px) {
+    .cardDesc div{
+        display: block;
+        width: 60vw;
+        height: 450px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
+@media  screen and (max-width:605px) {
+    .cardDesc div{
+        width: 80vw;
+    }
+}
+@media  screen and (max-width:405px) {
+    .cardDesc div{
+        width: 90vw;
+        height: 400px;
+    }
+}

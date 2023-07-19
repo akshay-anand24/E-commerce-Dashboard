@@ -1,0 +1,112 @@
+*{margin: 0;
+    padding: 0;}
+    
+    .profile1{
+        position: relative;
+        height: 50vh;
+        width: 100%;
+        /* border: 1px solid black; */
+        box-sizing: content-box;
+        background-image: linear-gradient(180deg, rgb(143, 143, 143),rgba(128, 118, 118, 0.179),white);
+    }
+    
+    .profimg{
+        position: absolute;
+        top:10%;
+        left: 40%;
+        height: 40vh;
+        width: 40vh;
+        border: 2px solid black;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px 2px black;
+    }
+    
+    .profimg img{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+    .profdesc{
+        position: absolute;
+        top:10%;
+        right: 0%;
+        height: 40vh;
+        width: 40vh;
+        text-align: center;
+        font-size: 5vh;
+        line-height: 10vh;
+        /* border: 1px solid black; */
+        display: none;
+        box-shadow: 2px 2px 5px 4px rgb(71, 71, 71);;
+        
+    }
+    .profile1:hover .profimg{
+        left: 15%;
+        animation: profimg 1.5s ease-in;
+        box-shadow: 2px 2px 5px 4px rgb(71, 71, 71);
+    }
+    .profile1:hover .profdesc{
+        right: 15%;
+        display: block;
+        animation: profdesc 2s ease-in ;
+    }
+    @keyframes profdesc {
+        0%{right: 100%;}
+        100%{right: 15%;box-shadow: 2px 5px 4px rgb(71, 71, 71);}
+        
+    }
+    @keyframes profimg {
+        0%{left: 43%;     box-shadow: 1px 1px 5px 2px rgb(71, 71, 71);
+        }
+        100%{left: 15%; box-shadow: 2px 2px 5px 4px rgb(71, 71, 71);}
+        
+    }
+    
+    
+    
+    
+    @media only screen and (max-width: 1000px) {
+    
+        .profile1{
+            display: none;
+        }
+        .profile2{
+            display: block;
+            height: 80vh;
+            width: 100%;
+            border-top: .5px solid black;
+            box-sizing: content-box;
+            background-image: linear-gradient(180deg, rgb(143, 143, 143),rgba(128, 118, 118, 0.179),white);        
+        }
+    
+        .profimg2{
+            margin: auto;
+            margin-top:4vh ;
+            height: 35vh;
+            width: 35vh;
+            border: 2px solid black;
+            border-radius: 50%;
+            box-shadow: 1px 1px 5px 2px black;
+        }
+        
+        .profimg2 img{
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
+        .profdesc2{
+            margin: auto;
+            margin-top: 8vh;
+            height: 30vh;
+            width: 30vh;
+            text-align: center;
+            font-size: 4.5vh;
+            line-height: 6vh;
+            /* border: 1px solid black; */
+            display: block;
+            box-shadow: 2px 2px 5px 4px rgb(71, 71, 71);;
+            
+        }
+    
+    
+      }

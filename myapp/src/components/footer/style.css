@@ -1,0 +1,58 @@
+*{margin: 0;
+    padding: 0;}
+    
+    .footer{
+        height: 80vh;
+        width: 100%;
+        background-color: rgb(41, 39, 39);
+        background-image: linear-gradient(0deg,black,rgb(67, 63, 63),rgb(76, 72, 72));
+        color: white;
+        font-size: large;
+        position: relative;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .contact{
+        position: absolute;
+        text-align: center;
+        bottom: 5%;
+        height:30%;
+        /* border: 1px solid white; */
+        width: 30%
+    }
+    .contact span{
+        display: block;
+        line-height: 7vh;
+        box-sizing: border-box;
+    }
+    
+    .copyright{
+        position: absolute;
+        top: 10%;
+        height: 40%;
+        width: 100%; 
+        /* border: 1px solid white; */
+    }
+    .copyright div{
+        text-align: center;
+        font-size: 20vh;
+    }
+    .copyright span{
+        display: block;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .socmed{
+        position: absolute;
+        text-align: center;
+        right: 0%;
+        bottom: 5%;
+        height:30%;
+        /* border: 1px solid white; */
+        width: 30%
+    }
+    .socmed span{
+        display: block;
+        line-height: 7vh;
+        box-sizing: border-box;
+    }

@@ -1,0 +1,104 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.adminUpdate input{
+    width: 40vw;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 8px;
+    font-size: 15px;
+    border: 2px solid black;
+}
+
+
+.cardUpdate{
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+    margin: 10px 1.5em; 
+    border: 3px solid black;
+    border-radius: 20px;
+    height: 350px;
+    width: 260px;
+    box-sizing: border-box;
+    transition: width .3s, height .4s;
+    box-shadow:3px 5px 3px  rgb(148, 142, 142)
+    
+}    
+.cardUpdate:hover{
+    width:265px;
+    height: 355px;
+    box-shadow:6px 10px 7px  rgb(148, 142, 142)
+  /* box shadow humesha last mein aa raha hai warna kaam nhi kar raha */
+}
+
+.imgUpdate{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit:cover;
+    height: 65%;
+    width: 100%;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+ 
+}
+.textUpdate{
+  position: absolute;
+    text-align: center;
+    line-height: 25px;
+    background-color: black;
+    color: aliceblue;
+    height: 29%;
+    width: 100%;
+    bottom: 0;
+    border-bottom-right-radius: 17.5px;
+    border-bottom-left-radius: 17.5px;
+}
+.textUpdate a{
+    color: white;
+    
+}
+
+@media only screen and (max-width: 913px) {
+    .cardUpdate{
+      display: inline-block;
+      width: 30%;
+      margin: 20px 10px;
+  
+  }
+    }
+
+
+@media only screen and (max-width: 822px) {
+    .cardUpdate{
+      display: inline-block;
+      width: 30%;
+      margin: 20px 10px;
+  
+  }
+    }
+
+
+@media only screen and (max-width: 768px) {
+  .cardUpdate{
+    display: block;
+    width: 60%;
+    margin: 20px auto;
+  }
+  }
+
+@media only screen and (max-width: 500px) {
+  .cardUpdate{
+    display: block;
+    width: 70%;
+    margin: 20px auto;
+  }
+  .adminUpdate input{
+    width: 85vw;
+  }
+  }
